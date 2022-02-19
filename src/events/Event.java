@@ -1,12 +1,22 @@
 /* 
- * Version 0.0.1a
+ * Version 0.1.2a
  * Developer: Colin Sexton
- * Updated: 02/17/2022
- * Inteface that will shape the main events that will be added to the calendar.
+ * Updated: 02/18/2022
+ * Superclass 
  */
 
 package events;
 
-abstract interface Event {
+public class Event {
+    //date
+    //time
+    private String eventName; //User input
+    private String location; //Call location data function thing
+    private String description; //User input
+    private boolean repeat; //True/False user input
+    private Category category = new Category(String whatever); //Wait, maybe not do this, but basically define the category the event belongs in
 
+    /* Insert Getters/Setters Here */
+
+    Event(String eventName, String location, String description); //date/time //category //repeat //etc.)
 }
